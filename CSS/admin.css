@@ -1,0 +1,139 @@
+/* --- СТИЛИ ДЛЯ СТРАНИЦЫ ВХОДА --- */
+
+/* Специальный фон для страницы логина */
+.login-body {
+  background: linear-gradient(135deg, #0fc2c0 0%, #015958 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Контейнер формы */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-title {
+  font-family: "Caprasimo", sans-serif;
+  color: #015958;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Группы инпутов */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #546e7a;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0f2f1;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0fc2c0;
+  box-shadow: 0 0 8px rgba(15, 194, 192, 0.2);
+}
+
+/* Кнопка входа */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #015958;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #028582;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Ссылка назад */
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: #546e7a;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #015958;
+  text-decoration: underline;
+}
+.admin-table td small {
+  color: #7f8c8d;
+}
+
+.admin-table .btn-edit {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.btn-save {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-delete-small {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.admin-select {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,72 @@
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.doc-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  border-bottom: 2px solid #015958;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.doc-text {
+  flex: 1;
+}
+
+.doc-text h2 {
+  color: #015958;
+}
+
+.doc-img {
+  flex: 1;
+}
+
+.doc-img img {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doc-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.doc-footer a {
+  color: #015958;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+  .doc-item,
+  .doc-item:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+}

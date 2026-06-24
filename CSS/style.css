@@ -1,0 +1,252 @@
+/* --- ГЛОБАЛЬНЫЕ НАСТРОЙКИ --- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Шрифты для всех заголовков и меню */
+h1,
+.login-title,
+.food-name,
+.just-main-text,
+.top-links {
+  font-family: "Lilita One", cursive;
+  letter-spacing: 0.5px;
+  color: black; /* Гарантируем черный цвет заголовков */
+}
+
+/* Шрифты для описаний */
+body,
+p,
+.food-description,
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* --- ШАПКА (HEADER) --- */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  border: 4px solid #555b6e;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #e0f2f1;
+  flex-grow: 1;
+}
+
+.top-links {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: black; /* Цвет ссылок в меню */
+  display: inline-block;
+}
+
+/* Исправленный Hover: теперь текст не "исчезает" */
+.main-menu a:hover {
+  color: #015958; /* Твой фирменный зеленый при наведении */
+  text-decoration: underline;
+}
+
+.Logo-LiChun {
+  height: 200px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* --- ЦЕНТРАЛЬНЫЙ ТЕКСТ И СЛАЙДЕР --- */
+.just-main-text {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.reviews-slider {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(224, 242, 241, 0.3); /* Легкий оттенок в тон меню */
+  padding: 20px 0;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+.reviews-track {
+  display: inline-block;
+  animation: scroll-reviews 40s linear infinite;
+}
+
+.reviews-slider:hover .reviews-track {
+  animation-play-state: paused;
+}
+
+.review-slide {
+  display: inline-block;
+  width: 300px;
+  margin: 0 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  white-space: normal;
+}
+
+/* --- СЕТКА БЛЮД (DISHES) --- */
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dish-card {
+  flex: 0 1 350px;
+  background-color: #f9fdfd;
+  border: 1px solid #546e7a;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 10px;
+  text-align: center; /* Центрирует всё содержимое внутри карточки */
+}
+
+/* Полоска сверху */
+.dish-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-color: #015958;
+  z-index: 10;
+}
+
+/* Ссылка внутри карточки (название) */
+.dish-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center; /* Центровка названия */
+}
+
+.dish_image {
+  width: calc(100% - 20px);
+  height: 280px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.food-name {
+  margin: 15px 0 5px 0;
+  text-align: center; /* Центровка текста названия */
+}
+
+.food-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  padding: 0 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.food-price {
+  text-align: center; /* Центровка цены */
+  font-weight: bold;
+  color: #015958;
+  margin: 15px 0;
+  display: block;
+}
+
+/* --- АНИМАЦИЯ --- */
+@keyframes scroll-reviews {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* --- АДАПТИВНОСТЬ (MOBILE FIXES) --- */
+
+@media (max-width: 768px) {
+  /* 1. Шапка: Логотип и меню встают друг под друга */
+  .header-container {
+    flex-direction: column-reverse; /* Сначала меню, потом лого сверху */
+    padding: 10px;
+  }
+
+  .main-menu {
+    flex-direction: column; /* Ссылки в меню встают в столбик */
+    gap: 15px;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .Logo-LiChun {
+    height: 120px; /* Уменьшаем лого на мобилке */
+    margin: 0 auto;
+  }
+
+  .top-links {
+    font-size: 18px; /* Чуть меньше шрифт для ссылок */
+    letter-spacing: 1px;
+  }
+
+  /* 2. Блюда: Подправляем размеры карточек */
+  .dishes {
+    gap: 20px; /* Уменьшаем гигантские дыры между блюдами */
+    padding: 20px 10px;
+  }
+
+  .dish-card {
+    flex: 0 1 100%; /* Карточка на всю ширину экрана */
+    max-width: 400px;
+  }
+
+  .dish_image {
+    height: 200px; /* Чтобы не занимало весь экран телефона */
+  }
+
+  /* 3. Текст */
+  .just-main-text {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* 4. Отзывы (слайдер) */
+  .review-slide {
+    width: 260px; /* Чуть уже для маленьких экранов */
+  }
+}

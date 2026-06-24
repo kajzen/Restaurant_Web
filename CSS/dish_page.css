@@ -1,0 +1,63 @@
+.main-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.dish-nav {
+  margin-bottom: 30px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #015958;
+  font-weight: bold;
+}
+
+.dish-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dish-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.dish-title {
+  font-size: 40px;
+  color: #015958;
+  margin-top: 0;
+}
+
+.dish-price-tag {
+  font-size: 24px;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.dish-text h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.dish-meta {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .dish-detail {
+    grid-template-columns: 1fr;
+  }
+}

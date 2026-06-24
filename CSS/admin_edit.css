@@ -1,0 +1,110 @@
+body.admin-body {
+  background-color: #f0f4f8;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Контейнеры секций */
+.admin-section {
+  background: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.admin-title {
+  font-family: "Lilita One", cursive;
+  color: #015958;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0f2f1;
+  padding-bottom: 10px;
+}
+
+/* Таблицы управления */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.admin-table th {
+  background-color: #015958;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.admin-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.admin-table img {
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* Кнопки действий */
+.btn-edit {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+
+.btn-edit:hover {
+  background-color: #d68910;
+}
+
+/* Стили формы редактирования */
+.edit-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #546e7a;
+  margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0f2f1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input-group input:focus {
+  border-color: #0fc2c0;
+  outline: none;
+}

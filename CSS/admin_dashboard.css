@@ -1,0 +1,129 @@
+/* Общие настройки для админки */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #015958;
+  border-bottom: 2px solid #015958;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+/* Форма добавления еды */
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: -10px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form button[type="submit"] {
+  background-color: #015958;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #028582;
+}
+
+/* Таблицы Бронирования и Отзывы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+table th {
+  background-color: #015958;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Стили для маленьких форм внутри таблиц (изменение статуса) */
+table form {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+table select {
+  padding: 5px;
+  font-size: 12px;
+}
+
+table button {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #546e7a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Кнопка выхода */
+button[type="submit"]:not([name="action"]) {
+  background-color: #d32f2f;
+  margin-top: 50px;
+}
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 5px;
+  transition: background 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}

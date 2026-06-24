@@ -1,0 +1,61 @@
+body {
+  background-color: #f4f7f6;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.static-header {
+  text-align: center;
+  border-bottom: 2px solid #e0f2f1;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.static-header h1 {
+  font-family: "Lilita One", cursive;
+  color: #015958;
+  font-size: 48px;
+  margin: 0;
+}
+
+.news-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.date {
+  color: #0fc2c0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #015958;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  color: #0fc2c0;
+}
+
+img {
+  max-width: 100%; /* Картинка никогда не будет шире своего контейнера */
+  height: auto; /* Высота будет меняться пропорционально ширине */
+  display: block; /* Убирает лишний отступ снизу */
+}
